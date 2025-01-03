@@ -293,7 +293,7 @@ ul, ol {
             background-color: #2e2f42;
             padding-top: 112px;
             padding-bottom: 112px;
-            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("/images/Back-tablet-1x.jpg");
+            background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/Back-tablet-1x.jpg");
             max-width: 768px;
         }
         .main-title {
@@ -307,7 +307,7 @@ ul, ol {
 
 @media (min-width:768px) and (min-resolution:192dpi) {
     .section-one{
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("/images/Back-tablet-2x.jpg");
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url("../images/Back-tablet-2x.jpg");
     }
 }
 
@@ -724,9 +724,11 @@ ul, ol {
     line-height: 1.2;
     letter-spacing: 0.02em;
     color: #434455;
+    font-style: normal;
 }
 .mobile-contacts-list.current {
     color: #4d5ae5;
+    font-style: normal;
 }
 
 .social-links-list-item-mobile {
@@ -1224,13 +1226,19 @@ fill: #FFFFFF;
     .container.footer{
         flex-direction: row;
         flex-wrap: wrap;
-        align-items: flex-start;
+        align-items: center;
+        justify-content: center;
         gap: 24px;
         row-gap: 0px;
-        margin-left: 108px;
-        margin-right: 164px;
+        margin-left: auto;
+        margin-right: auto;
         
     }
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
    
     .section-footer-paragraph {
         width: 264px;
@@ -1249,9 +1257,10 @@ fill: #FFFFFF;
 
     .footer-subscribe {
         flex-direction: column;
-        margin-left: 0;
-        margin-right: 0;
         align-items: flex-start;
+        justify-content: flex-start;
+        margin-left: 120px;
+
     }
         .logo-div {
             margin-right: 0;
